@@ -1,0 +1,96 @@
+/* Універсальний *
+Теговый селектор (селектор элементу) 
+Селектор класу
+Селектор ідентифікатора
+Селектор груп h1, p
+Селектор нащадку body a
+Дочірний селектор header > a  
+Сусідній селектор header + main
+Споріднений селектор p~a
+Селектор атрибуту input[type=text] {...}*/
+
+/* *{
+   color: brown; 
+} */
+/* body{
+    background-color: aqua;
+} */
+
+/* .title{
+    color: red;
+}
+.link{
+    font-size: 24px;
+}
+.text{
+    color: blue;
+}
+.text-2{
+    color: black;
+}*/
+/* #header-title{
+    color: green;
+}  */
+
+/* p{
+color: greenyellow;
+} */
+/* body p{
+    color: blue;
+}
+a > p{
+    color: green;
+} */
+
+/* a + p{
+    color: green;  
+} */
+
+/* a[href]{
+    color: green;
+} */
+
+/* body{
+    font-size: 36px;
+}
+section{
+    font-size: 24px;
+} */
+
+/* .text{
+    font-size: 36px;
+}
+p{
+    color: tomato;
+    font-size: 18px;
+    border: 1px solid green;
+}
+
+p.text{
+    font-size: 42px;
+} */
+
+/* .link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:focus,
+.link:hover{
+    color: blueviolet;
+}
+
+.list-item:nth-child(odd){
+    color: green;
+} */
+
+/* Завдання 1 */
+
+
+
+
+
+/* Завдання 2 */
+
+
+
