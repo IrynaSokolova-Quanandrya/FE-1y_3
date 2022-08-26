@@ -1,0 +1,13 @@
+/* text-transform: none/capitalize/uppercase/lowercase/inherit/initial;
+ */
+ /* text-indent: 20px/15%/inherit */
+ /* white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial; */
+ /* word-break: normal/break-all/keep-all/inherit/initial; */
+ /* word-spacing: normal/1px/0.2e/50%/inherit/initial; */
+ /* font-style */
+ /* font-size */
+ /* text-align */
+ /* vertical-align - вертикальне вирівнювання */
+ p{
+   text-indent: 10px;
+ }
