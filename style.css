@@ -8,6 +8,13 @@
  /* font-size */
  /* text-align */
  /* vertical-align - вертикальне вирівнювання */
+ body{
+  font-family: 'Playfair Display';
+ }
  p{
-   text-indent: 10px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
  }
