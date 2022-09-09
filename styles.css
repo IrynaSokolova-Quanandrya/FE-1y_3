@@ -1,10 +1,9 @@
-/* ul + p{
-    font-size: 24px;
-} */
-
-/* div p{
-    color: red ;
-} */
-div>div>p{
-    color: green;
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
