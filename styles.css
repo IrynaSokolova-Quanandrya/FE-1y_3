@@ -39,11 +39,11 @@ ul{
     width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .container{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -141,6 +141,16 @@ nav{
     color: var(--thirdly-text-color);
 }
 
+/* Секція особливості */
+
+.fetures{  
+    display: flex;
+    justify-content: space-between;
+}
+.fetures-item{
+    width: 270px;
+}
+
 /* Футер */
 .section.footer{
     padding-top: 60px;
@@ -148,3 +158,46 @@ nav{
 }
 
 /* Потрфоліо  */
+
+/* Кнопки фільтру */
+.filter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-item:not(:last-child){
+    margin-right: 8px;
+}
+.filter-btn{
+    border: none;
+    border-radius: 4px;
+    padding: 6px 26px;
+
+    background: #F5F4FA;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--thirdly-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Приклади робіт */
+.examples{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.examples-link{
+    width: calc((100% - 30px * 3) / 3);
+    margin: 15px;
+}

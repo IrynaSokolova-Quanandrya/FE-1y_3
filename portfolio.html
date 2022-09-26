@@ -13,8 +13,9 @@
 <body>
 
     <!-- Шапка -->
-    <header>
-        <a class="logo" href="./"><span>Web</span>Studio</a>
+    <header class="section header">
+        <div class="container nav">
+            <a class="logo" href="./"><span>Web</span>Studio</a>
         <nav>
             <ul class="nav-list">
                 <li class="nav-item">
@@ -30,75 +31,90 @@
         </nav>
         <ul class="contacts-list">
             <li class="contact-item">
-                <a class="contact-link" href="mail:info@devstudio.com">info@devstudio.com</a>
+                <a class="contact-link" 
+                href="mail:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="contact-item">
-                <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contact-link" 
+                href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </header>
     <!--Основна секція-->
 <main>
-    <!-- <section class="section"> -->
+    <section class="section">
         <div class="container">
     <ul class="filter">
-        <li><button type="button" class="filter" href="">Усе</button></li>
-        <li><button type="button" class="filter" href="">Веб-сайти</button></li>
-        <li><button type="button" class="filter" href="">Застосунки</button></li>
-        <li><button type="button" class="filter" href="">Дизайн</button></li>
-        <li><button type="button" class="filter" href="">Маркетинг</button></li>
+        <li class="filter-item">
+            <button type="button" class="filter-btn" href="">Усе</button>
+        </li>
+        <li class="filter-item">
+            <button type="button" class="filter-btn" href="">Веб-сайти</button>
+        </li>
+        <li class="filter-item">
+            <button type="button" class="filter-btn" href="">Застосунки</button>
+        </li>
+        <li class="filter-item">
+            <button type="button" class="filter-btn" href="">Дизайн</button>
+        </li>
+        <li class="filter-item">
+            <button type="button" class="filter-btn" href="">Маркетинг</button>
+        </li>
     </ul>
-    <ul>
-        <li >
-            <a href=""> <img src="./images/portfolio/laptop.jpg" alt="Фотографии троих людей на экране ноутбука" width="370" height="294">
+    <ul class="examples">
+        <li class="examples-link">
+            <a href=""> 
+            <img src="./images/portfolio/laptop.jpg" alt="Фотографии троих людей на экране ноутбука" width="370" height="294">
             <h2 >Технокряк</h2>
-            <p >Веб-сайт</p>
+            <p>Веб-сайт</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/players.jpg" alt="Два баскетболиста" width="370" height="294">
+        <li class="examples-link">
+            <a href="">
+            <img src="./images/portfolio/img.jpg" alt="Два баскетболиста" width="370" height="294">
             <h2>Постер New Orlean vs Golden Star</h2>
             <p >Дизайн</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/seafood.jpg" alt="Рыба с надписью The seafood restaurant" width="370" height="294">
+        <li class="examples-link">
+            <a href=""><img src="./images/portfolio/book.jpg" alt="Рыба с надписью The seafood restaurant" width="370" height="294">
             <h2>Ресторан Seafood</h2>
             <p >Застосунки</p>
             </a>
         </li>
-        <li>
+        <li class="examples-link">
             <a href=""><img src="./images/portfolio/headphone.jpg" alt="Наушники" width="370" height="294">
             <h2>Проєкт Prime</h2>
             <p >Маркетинг</p>
             </a>
         </li>
-        <li>
+        <li class="examples-link">
             <a href=""><img src="./images/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
             <h2>Проєкт Boxes</h2>
             <p >Застосунки</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/monitor.jpg" alt="Черный монитор" width="370" height="294">
+        <li class="examples-link">
+            <a href=""><img src="./images/portfolio/laptop on table.jpg" alt="Черный монитор" width="370" height="294">
             <h2>Inspiration has no Borders</h2>
             <p >Веб-сайт</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/magazine.jpg" alt="Книга в развороте" width="370" height="294">
+        <li class="examples-link">
+            <a href=""><img src="./images/portfolio/screen.jpg" alt="Книга в развороте" width="370" height="294">
             <h2>Видавництво Limited Edition</h2>
             <p >Дизайн</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/labeltag.jpg" alt="Этикетка с надписью LA BEL TAG" width="370" height="294">
+        <li class="examples-link">
+            <a href=""><img src="./images/portfolio/headphone.jpg" alt="Этикетка с надписью LA BEL TAG" width="370" height="294">
             <h2>Проєкт LAB</h2>
             <p >Маркетинг</p>
             </a>
         </li>
-        <li>
-            <a href=""><img src="./images/portfolio/desktop.jpg" alt="Ноутбук" width="370" height="294">
+        <li class="examples-link">
+            <a href=""><img src="./images/portfolio/book.jpg" alt="Ноутбук" width="370" height="294">
             <h2>Growing Business</h2>
             <p >Застосунки</p>
             </a>
@@ -109,8 +125,9 @@
 </section>
 </main>
     <!--Footer-->
-    <footer>
-        <a href="./"><span>Web</span>Studio</a>
+    <footer class="section footer">
+        <div class="container">
+            <a href="./"><span>Web</span>Studio</a>
         <address>м. Київ, пр-т Лесі Українки, 26</address>
         <ul>    
             <li>
@@ -120,6 +137,7 @@
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>
