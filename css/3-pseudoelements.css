@@ -3,13 +3,13 @@
 /* ракета */
 .button {
     display: inline-flex;
-    /* align-items: center; */
+    align-items: center;
     padding: 10px 20px;
-    background-color: teal;
+    background-color: teal; 
     color: #fff;
     border-radius: 3px;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer; 
   }
   
   .button:hover,
@@ -18,12 +18,13 @@
   }
   
   .button::before {
-    /* content: ""; */
-    /* width: 20px; */
-    /* height: 20px; */
-    /* margin-right: 10px; */
-    /* background-image: url("../img/icons/rocket-icon.png"); */
-    /* background-size: contain; */
+    content: "";
+    width: 20px;
+    height: 20px;
+    /* outline: 1px solid; */
+    margin-right: 10px;
+    background-image: url("../img/icons/rocket-icon.png");
+    background-size: contain;
   }
   
   /* LIST */
