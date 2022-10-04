@@ -4,17 +4,18 @@
 .button {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: teal; 
-    color: #fff;
-    border-radius: 3px;
+    /* padding: 10px 20px; */
+    /* background-color: teal;  */
+    color: #000;
+    /* border-radius: 3px; */
     text-decoration: none;
     cursor: pointer; 
   }
   
   .button:hover,
   .button:focus {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
+    color: red;
   }
   
   .button::before {
@@ -27,6 +28,13 @@
     background-size: contain;
   }
   
+  .title::before{
+    display: inline-flex;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: green;
+  }
   /* LIST */
   
   .list {
