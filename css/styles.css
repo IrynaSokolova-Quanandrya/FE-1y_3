@@ -157,7 +157,28 @@ nav{
 .fetures-item{
     width: 270px;
 }
+/* Чим ми займаємося */
 
+.app-list{
+    display: flex;
+}
+
+.app-item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* Наша команда */
+
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.team-item{
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin: 15px;
+}
 /* Футер */
 .section.footer{
     padding-top: 60px;
