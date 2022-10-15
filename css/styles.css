@@ -1,9 +1,12 @@
+/* cubic-bezier(0.4, 0, 0.2, 1) */
+
 :root{
     --accent-color:#2196F3;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --thirdly-text-color: #FFFFFF;
     --background-color: #2F303A;
+    --svg: rgba(175, 177, 184, 1)
 }
 /* Загальні стилі */
 body{
@@ -96,6 +99,8 @@ nav{
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -148,6 +153,40 @@ nav{
     color: var(--thirdly-text-color);
 }
 
+.hero-button{
+    display: inline-flex;
+    background-color: var(--accent-color);
+    color: var(--thirdly-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 24px;  
+    
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    /* transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 1000ms; */
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    background-color: aquamarine;
+    color: #2F303A;
+
+}
+
+
 /* Секція особливості */
 
 .fetures{  
@@ -179,6 +218,21 @@ nav{
     flex-basis: calc((100% - 30px * 4) / 4);
     margin: 15px;
 }
+
+/* Постійні клієнти */
+
+.customers-link{
+    width: 170px;
+    border: 1px solid var(--svg);
+    border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+    border: 1px solid var(--accent-color);   
+}
+
+
 /* Футер */
 .section.footer{
     padding-top: 60px;
