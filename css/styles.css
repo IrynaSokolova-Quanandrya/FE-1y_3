@@ -103,6 +103,11 @@ nav{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
@@ -142,11 +147,17 @@ nav{
     background-color: var(--background-color);
 }
 .hero-title{
+    width: 696px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -189,12 +200,34 @@ nav{
 
 /* Секція особливості */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
 .fetures{  
     display: flex;
     justify-content: space-between;
 }
 .fetures-item{
     width: 270px;
+}
+
+.icon-box{
+    width: 270px;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.fetures-icon{
+    width: 70px;
+    height: 70px;  
 }
 /* Чим ми займаємося */
 
@@ -207,6 +240,9 @@ nav{
 }
 
 /* Наша команда */
+.section.our-team{
+    background-color: #F5F4FA;
+}
 
 .team-list{
     display: flex;
@@ -217,27 +253,127 @@ nav{
 .team-item{
     flex-basis: calc((100% - 30px * 4) / 4);
     margin: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
+.team-card{
+    padding: 30px 32px;
+    text-align: center;
+    background-color: var(--thirdly-text-color);
+}
+
+.name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.position{
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+}
+
+.networks{
+    display: flex;
+}
+
+.networks-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.networks-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: var(--thirdly-text-color);
+    color: var(--svg);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks-link:hover,
+.networks-link:focus{
+    background-color: var(--accent-color);
+    color: var(--thirdly-text-color);
+}
+
+.networks-icon{
+    fill: currentColor;
+}
 /* Постійні клієнти */
+.customers-list{
+    display: flex;
+}
+
+.customers-item:not(:last-child){
+    margin-right: 30px;
+}
 
 .customers-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
     width: 170px;
+    height: 90px;
     border: 1px solid var(--svg);
+    color: var(--svg);
     border-radius: 4px;
 }
 
 .customers-link:hover,
 .customers-link:focus{
-    border: 1px solid var(--accent-color);   
+    border: 1px solid var(--accent-color);  
+    color: var(--accent-color); 
 }
 
+.customers-icon{
+    fill: currentColor;
+}
 
 /* Футер */
 .section.footer{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer .logo{
+    color: var(--thirdly-text-color);
+    
+}
+
+address{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--thirdly-text-color);
+    margin-top: 20px;
+    
+}
+
+.footer .contacts-list{
+    display: block;
+    margin-top: 9px;
+}
+
+.footer .contact-item:last-child{
+   margin-left: 0;
+   margin-top: 9px; 
+}
+
+
 
 /* Потрфоліо  */
 
