@@ -26,7 +26,7 @@
 }
 
 .container:hover .box{
-  animation-play-state: paused;
+  /* animation-play-state: paused; */
   /* transform: translateX(-200px); */
   /* transform: translate(-100px) scale(10%) rotate(180deg);
   opacity: 0.3; */
@@ -36,14 +36,22 @@
 @keyframes circle{
   0%{
     left: 0;
+    top:0;
+  }
+  25%{
+    left: 0;
+    top: 100px;
   }
   50%{
-    border-radius: 0;
-    background-color: tomato;
-    top: 50px;
+    top:100px;
+    left: 500px;
+  }
+  75%{
+    top: 0;
+    left: 500px;
   }
   100%{
-    left: 100%;
+    left: 0;
+    top:0;
   }
-
 }
