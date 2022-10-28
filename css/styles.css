@@ -6,7 +6,8 @@
     --secondary-text-color: #757575;
     --thirdly-text-color: #FFFFFF;
     --background-color: #2F303A;
-    --svg: rgba(175, 177, 184, 1)
+    --svg: rgba(175, 177, 184, 1);
+    --card-border-line: #EEEEEE;
 }
 /* Загальні стилі */
 body{
@@ -37,6 +38,12 @@ ul{
     list-style: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  } 
+
 /* Головна сторінка */
 .section{
     width: 1600px;
@@ -52,6 +59,16 @@ ul{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.title{
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 /* Хедер */
 .section.header{
@@ -348,6 +365,11 @@ nav{
     padding-bottom: 60px;
 }
 
+.footer-items{
+ display: flex;
+ align-items: baseline;
+}
+
 .footer .logo{
     color: var(--thirdly-text-color);
     
@@ -373,6 +395,38 @@ address{
    margin-top: 9px; 
 }
 
+.footer-contacts {
+    margin-right: 70px;
+  }
+
+  /* Приєднуйтесь */
+.join-networks {
+    color: var(--thirdly-text-color);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .footer .networks {
+    margin-top: 20px;
+  }
+  
+  .join .networks-link {
+    background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
+    color: var(--thirdly-text-color);
+  }
+  
+  .join .social-icon {
+    /* Наслідує колір від батьківського елементу
+     в стані спокою та при ховері і фокусі */
+    fill: currentColor;
+  }
+  
+  /* .join .networks-link:hover,
+  .join .networks-link:focus {
+    background-color: var(--accent-color);
+  } */
 
 
 /* Потрфоліо  */
@@ -419,3 +473,25 @@ address{
     width: calc((100% - 30px * 3) / 3);
     margin: 15px;
 }
+
+.examples-titel {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .examples-type {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+  
+  .link-text {
+    padding: 20px 24px;
+    border-left: 1px solid var(--card-border-line);
+    border-right: 1px solid var(--card-border-line);
+    border-bottom: 1px solid var(--card-border-line);
+  }
