@@ -1,23 +1,5 @@
 /* cubic-bezier(0.4, 0, 0.2, 1) */
-/* .thumb{
-    position: relative;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
-/* .box{
-    position:absolute;
-    outline: 1px solid red;
-    width: 150px;
-    height: 100px;
-    background-color: red;    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.link-text{
-    outline: 1px solid tomato;
-} */
 :root{
     --accent-color:#2196F3;
     --primary-text-color: #212121;
@@ -32,6 +14,11 @@ body{
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color);
 }
+
+body.modal-open {
+    overflow: hidden;
+}
+
 *,
 *::before,
 *::after{
@@ -244,6 +231,13 @@ nav{
     background-color: rgba(0, 0, 0, 0.2);
 
     pointer-events: none;
+
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal{
@@ -255,6 +249,27 @@ nav{
     width: 528px;
     height: 581px;
 
+    background-color: var(--thirdly-text-color);
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    border: 1px solid var(--svg);
+    border-radius: 50%;
+    background-image: url(../img/icons/close.svg);
+    background-size: contain;
     background-color: var(--thirdly-text-color);
 }
 
@@ -295,8 +310,34 @@ nav{
     display: flex;
 }
 
+.app-item{
+    position: relative;
+}
+
 .app-item:not(:last-child){
     margin-right: 30px;
+}
+
+.thumb-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    width: 100%;
+    height: 70px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    
+    background-color: rgba(47,48,58,.8);
+    color: var(--thirdly-text-color);
 }
 
 /* Наша команда */
