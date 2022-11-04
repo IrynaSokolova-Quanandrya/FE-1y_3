@@ -230,9 +230,10 @@ nav{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
-    pointer-events: none;
+    /* pointer-events: none; */
 
     opacity: 1;
+    z-index: 5;
 }
 
 .backdrop.is-hidden {

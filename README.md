@@ -2,15 +2,26 @@ QnA
 
 Перевірка знань
 
-- Позиціонування - теорія
-- Розглядаємо приклад виривання з потоку кнопок на карточці портфоліо
-- Флекси працюють, але не у випадку декількох елементів
-- Opacity контролює прозорість
-- Overlay і z-index
-- Верстаємо оверлей в Портфоліо
-- fixed робимо приклад фіксованої кнопки підпишись
-- Бекдроп (приклад з телеграму) і Модальне вікно (fixed)
-- Ховаємо модалку is-hidden {pointr-event: none}
--
+- Верстаємо форму: тег form label, input,
 
-резюме
+- Розглядаємо атрибути name (особливості в групі елементів радіо та чекбоксів),
+  type, id, for, autocomplete, autofocus, placeholder
+
+- Input type: text, tel, email, checkboks, summit, button, radio, date, file,
+  datetime-local
+
+- fieldset vs role="group"
+
+- can i use
+
+- textarea: resize:none
+
+- стилізуємо форми
+
+- ::placeholder
+
+- кастомний чекбокс
+
+- комміт
+
+- резюме
