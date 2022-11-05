@@ -51,12 +51,13 @@
     </header>
     <main>
         <!-- Секція герой -->
+        
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
                 <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
                 <!-- Бекдроп -->
-                <div class="backdrop is-hidden" data-modal>
+                <div class="backdrop" data-modal>
                     <!-- Модальне вікно -->
                     <div class="modal" >
                         <button type="button" class="modal-button" data-modal-close>
@@ -64,6 +65,34 @@
                                 <use href="./img/icons/symbol-defs.svg#close"></use>
                             </svg>
                         </button>
+                        <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
+                        <ul class="fields">
+                            <li class="field-item">
+                                <label for="name">Ім'я</label>
+                                <input type="text" name="name" id="name" placeholder="Владислав Ніколаєнко">
+                                <svg>
+                                    <use></use>
+                                </svg>
+                            </li>
+                            <li class="field-item">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel" placeholder="+38(099)-..-..-">
+                            </li>
+                            <li class="field-item">
+                                <label for="mail">Пошта</label>
+                                <input type="email" name="mail" id="mail" placeholder="mail@mail.ua">
+                            </li>
+                            <li class="field-item">
+                                <label for="comment">Коментарі</label>
+                                <textarea name="comment" id="comment" placeholder="Залиште свій коментар тут"></textarea>
+                            </li>
+                        </ul>  
+                        <label>
+                            <input type="checkbox" name="checkbox">
+                            Погоджуюсь з розсилкою і приймаю 
+                            <a class="checkbox-link" href="">Умови договору</a> 
+                        </label>
+                        
                     </div>
                 </div>
             </div>
@@ -393,6 +422,6 @@
         </div>
         </div>
     </footer>
-    <script src="./js/modal.js" type="module"/>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
