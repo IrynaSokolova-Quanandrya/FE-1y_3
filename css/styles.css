@@ -187,8 +187,11 @@ nav{
     color: var(--thirdly-text-color);
 }
 
-.hero-button{
+.button{
     display: inline-flex;
+    justify-content: center;
+    min-width: 200px;
+
     background-color: var(--accent-color);
     color: var(--thirdly-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -213,8 +216,8 @@ nav{
     transition-delay: 1000ms; */
 }
 
-.hero-button:hover,
-.hero-button:focus{
+.button:hover,
+.button:focus{
     background-color: aquamarine;
     color: #2F303A;
 
@@ -290,9 +293,12 @@ nav{
 .fields{
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 20px;
 }
 
 .field-item{
+    position: relative;
     text-align: left;
     font-weight: 400;
     font-size: 12px;
@@ -314,6 +320,12 @@ nav{
     padding-left: 42px;
 }
 
+.field-item .modal-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+
 .field-item textarea{
     resize: none;
 
@@ -328,6 +340,9 @@ nav{
     color: var(--accent-color);
 }
 
+.checkbox{
+    margin-bottom: 30px;
+}
 /* Секція особливості */
 
 .visually-hidden {

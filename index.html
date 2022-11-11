@@ -55,7 +55,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+                <button class="button" type="button" data-modal-open>Замовити послугу</button>
                 <!-- Бекдроп -->
                 <div class="backdrop" data-modal>
                     <!-- Модальне вікно -->
@@ -70,22 +70,22 @@
                         <ul class="fields">
                             <li class="field-item">
                                 <label for="name">Ім'я</label>
-                                <input type="text" name="name" id="name" placeholder="Владислав Ніколаєнко">
-                                <svg width="12" height="12">
+                                <input type="text" name="name" id="name" placeholder="Ім'я">
+                                <svg class="modal-icon" width="12" height="12">
                                     <use href="./img/icons/symbol-defs.svg#name"></use>
                                 </svg>
                             </li>
                             <li class="field-item">
                                 <label for="tel">Телефон</label>
                                 <input type="tel" name="tel" id="tel" placeholder="+38(099)-..-..-">
-                                <svg width="13" height="13">
+                                <svg class="modal-icon" width="13" height="13">
                                     <use href="./img/icons/symbol-defs.svg#phone"></use>
                                 </svg>
                             </li>
                             <li class="field-item">
                                 <label for="mail">Пошта</label>
                                 <input type="email" name="mail" id="mail" placeholder="mail@mail.ua">
-                                <svg width="15" height="12">
+                                <svg class="modal-icon" width="15" height="12">
                                     <use href="./img/icons/symbol-defs.svg#email"></use>
                                 </svg>
                             </li>
@@ -97,12 +97,15 @@
                                 </svg>
                             </li>
                         </ul>  
-                        <label>
-                            <input type="checkbox" name="checkbox">
-                            Погоджуюсь з розсилкою і приймаю 
-                            <a class="checkbox-link" href="">Умови договору</a> 
-                        </label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="checkbox">
+                                Погоджуюсь з розсилкою і приймаю 
+                                <a class="checkbox-link" href="">Умови договору</a> 
+                            </label>
+                        </div>
                         
+                        <button type="button" class="button">Надіслати</button>
                     </div>
                 </div>
             </div>
