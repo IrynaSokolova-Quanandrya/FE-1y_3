@@ -187,8 +187,11 @@ nav{
     color: var(--thirdly-text-color);
 }
 
-.hero-button{
+.button{
     display: inline-flex;
+    justify-content: center;
+    min-width: 200px;
+
     background-color: var(--accent-color);
     color: var(--thirdly-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -213,8 +216,8 @@ nav{
     transition-delay: 1000ms; */
 }
 
-.hero-button:hover,
-.hero-button:focus{
+.button:hover,
+.button:focus{
     background-color: aquamarine;
     color: #2F303A;
 
@@ -230,10 +233,9 @@ nav{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
-    /* pointer-events: none; */
-
     opacity: 1;
-    z-index: 5;
+    
+    z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -246,6 +248,8 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    padding: 40px;
 
     width: 528px;
     height: 581px;
@@ -274,6 +278,71 @@ nav{
     background-color: var(--thirdly-text-color);
 }
 
+/* Форма модального вікна */
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.field-item{
+    position: relative;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: var(--secondary-text-color);
+}
+.field-item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.field-item input{
+    width: 100%;
+    height: 40px;
+
+    padding-left: 42px;
+}
+
+.field-item .modal-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+
+.field-item textarea{
+    resize: none;
+
+    width: 100%;
+    height: 120px;
+
+    padding: 12px 16px;
+}
+
+.checkbox-link{
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.checkbox{
+    margin-bottom: 30px;
+}
 /* Секція особливості */
 
 .visually-hidden {

@@ -51,12 +51,13 @@
     </header>
     <main>
         <!-- Секція герой -->
+        
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+                <button class="button" type="button" data-modal-open>Замовити послугу</button>
                 <!-- Бекдроп -->
-                <div class="backdrop is-hidden" data-modal>
+                <div class="backdrop" data-modal>
                     <!-- Модальне вікно -->
                     <div class="modal" >
                         <button type="button" class="modal-button" data-modal-close>
@@ -64,6 +65,47 @@
                                 <use href="./img/icons/symbol-defs.svg#close"></use>
                             </svg>
                         </button>
+                        <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
+                        <!-- Форма модального вікна -->
+                        <ul class="fields">
+                            <li class="field-item">
+                                <label for="name">Ім'я</label>
+                                <input type="text" name="name" id="name" placeholder="Ім'я">
+                                <svg class="modal-icon" width="12" height="12">
+                                    <use href="./img/icons/symbol-defs.svg#name"></use>
+                                </svg>
+                            </li>
+                            <li class="field-item">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel" placeholder="+38(099)-..-..-">
+                                <svg class="modal-icon" width="13" height="13">
+                                    <use href="./img/icons/symbol-defs.svg#phone"></use>
+                                </svg>
+                            </li>
+                            <li class="field-item">
+                                <label for="mail">Пошта</label>
+                                <input type="email" name="mail" id="mail" placeholder="mail@mail.ua">
+                                <svg class="modal-icon" width="15" height="12">
+                                    <use href="./img/icons/symbol-defs.svg#email"></use>
+                                </svg>
+                            </li>
+                            <li class="field-item">
+                                <label for="comment">Коментарі</label>
+                                <textarea name="comment" id="comment" placeholder="Залиште свій коментар тут"></textarea>
+                                <svg width="12" height="12">
+                                    <use href="./img/icons/symbol-defs.svg#check"></use>
+                                </svg>
+                            </li>
+                        </ul>  
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="checkbox">
+                                Погоджуюсь з розсилкою і приймаю 
+                                <a class="checkbox-link" href="">Умови договору</a> 
+                            </label>
+                        </div>
+                        
+                        <button type="button" class="button">Надіслати</button>
                     </div>
                 </div>
             </div>
@@ -356,7 +398,7 @@
                 <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
-    </div>
+            </div>
         <!-- Приєднуйтесь -->
         <div class="join">
             <b class="join-networks">Приєднуйтесь</b>
@@ -393,6 +435,6 @@
         </div>
         </div>
     </footer>
-    <script src="./js/modal.js" type="module"/>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
