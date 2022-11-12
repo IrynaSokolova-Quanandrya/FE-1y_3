@@ -2,26 +2,15 @@ QnA
 
 Перевірка знань
 
-- Верстаємо форму: тег form label, input,
-
-- Розглядаємо атрибути name (особливості в групі елементів радіо та чекбоксів),
-  type, id, for, autocomplete, autofocus, placeholder
-
-- Input type: text, tel, email, checkboks, summit, button, radio, date, file,
-  datetime-local
-
-- fieldset vs role="group"
-
-- can i use
-
-- textarea: resize:none
-
-- стилізуємо форми
-
-- ::placeholder
-
 - кастомний чекбокс
-
+- :focus-within
 - комміт
-
+- Методологія ВЕМ
+- Переписуємо селектори класу по новій методології
+- Препроцессори
+- Налаштовуємо плагін Live sass compiler
+- Створюємо структуру стилів, паршали @import
+- Вкладеність з оператором конкатенації
+- Плейсхолдери
+- Міксіни
 - резюме

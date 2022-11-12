@@ -1,14 +1,5 @@
-/* cubic-bezier(0.4, 0, 0.2, 1) */
+@import "./variables/variables";
 
-:root{
-    --accent-color:#2196F3;
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --thirdly-text-color: #FFFFFF;
-    --background-color: #2F303A;
-    --svg: rgba(175, 177, 184, 1);
-    --card-border-line: #EEEEEE;
-}
 /* Загальні стилі */
 body{
     font-family: "Roboto", sans-serif;
@@ -318,12 +309,26 @@ nav{
     height: 40px;
 
     padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+}
+
+.field-item:focus-within input,
+.field-item:focus-within textarea{
+    border: 1px solid var(--accent-color);
 }
 
 .field-item .modal-icon{
     position: absolute;
     top: 50%;
     left: 12px;
+}
+
+.field-item:focus-within .modal-icon{
+    fill: var(--accent-color);    
 }
 
 .field-item textarea{
@@ -333,6 +338,8 @@ nav{
     height: 120px;
 
     padding: 12px 16px;
+
+    outline: none;
 }
 
 .checkbox-link{
@@ -343,6 +350,24 @@ nav{
 .checkbox{
     margin-bottom: 30px;
 }
+
+.checkbox input{
+    appearance: none;
+}
+
+.checkbox-icon{
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+    fill: var(--thirdly-text-color);
+    
+    margin-right: 7px;
+}
+
+.checkbox input:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
 /* Секція особливості */
 
 .visually-hidden {
