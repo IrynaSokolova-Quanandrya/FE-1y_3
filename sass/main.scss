@@ -1,4 +1,5 @@
 @import "./variables/variables";
+@import "./variables/breackpoints";
 @import "./base/common";
 
 @import "./utils/visually-hidden";
@@ -6,12 +7,17 @@
 @import "./variables/mixins";
 
 @import "./components/header";
-@import "./components/hero/hero";
-@import "./components/hero/modal";
-@import "./components/hero/modal-form";
-@import "./components/fetures";
-@import "./components/our-team";
-@import "./components/customers";
+
+@import "./components/main-page/hero/hero";
+@import "./components/main-page/hero/modal";
+@import "./components/main-page/hero/modal-form";
+@import "./components/main-page/fetures";
+@import "./components/main-page/our-team";
+@import "./components/main-page/customers";
+
+@import "./components/footer/footer";
+@import "./components/footer/join";
+@import "./components/footer/footer-form";
 
 
 
