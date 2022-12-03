@@ -2,7 +2,7 @@
     width: 100%;
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid black;
+    // outline: 1px solid black;
 
     @media screen and (min-width: $mobile) {
         width: 480px;
@@ -22,8 +22,7 @@
 }
 
 .container{
-    outline: 1px solid red; 
-    // width: 1200px;
+    // outline: 1px solid red;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
