@@ -1,3 +1,8 @@
+.section-work{
+    @media (max-width: 1199px) {
+        display: none;
+      }
+}
 .app-list{
     display: flex;
 }
