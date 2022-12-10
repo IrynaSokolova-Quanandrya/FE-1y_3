@@ -1,12 +1,10 @@
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
-    // outline: 1px solid black;
 }
 
 .container{
     width: 100%;
-    // outline: 1px solid red;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -14,17 +12,14 @@
 
     @media screen and (min-width: $mobile) {
         width: 480px;
-        // background-color: tomato;
     }
 
     @media screen and (min-width: $tablet) {
         width: 768px;
-        // background-color: green;
     }
 
     @media screen and (min-width: $desktop) {
         width: 1200px;
-        // background-color: orange;
     }
 }
 

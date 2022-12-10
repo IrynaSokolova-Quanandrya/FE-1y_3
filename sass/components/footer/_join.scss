@@ -7,6 +7,10 @@
   }
   
   .join{
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 60px;
+      text-align: center;
+  }
     .networks-link {
     background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
     color: var(--thirdly-text-color);
